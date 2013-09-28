@@ -60,7 +60,7 @@
 </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="CsspEntities" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+      <Schema Namespace="CsspEntities" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
         <EntityContainer Name="CsspEntitiesContainer" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ServiceAccessReqEntities" EntityType="CsspEntities.ServiceAccessReqEntity" />
           <EntitySet Name="ParamNameEntities" EntityType="CsspEntities.ParamNameEntity" />
@@ -74,16 +74,16 @@
           <Property Name="Head" Type="CsspEntities.Head" Nullable="false" />
           <Property Name="Body" Type="CsspEntities.Body" Nullable="false" />
           </EntityType>
-        <ComplexType Name="Head" >
+        <ComplexType Name="Head">
           <Property Type="CsspEntities.Address_Info_Schema" Name="Send_Address" Nullable="false" />
           <Property Type="CsspEntities.Address_Info_Schema" Name="Dest_Address" Nullable="false" />
           <Property Type="String" Name="Version" Nullable="false" />
           <Property Type="String" Name="MsgType" Nullable="false" />
         </ComplexType>
-        <ComplexType Name="Body" >
+        <ComplexType Name="Body">
           <Property Type="CsspEntities.RequestType" Name="Request" Nullable="false" />
         </ComplexType>
-        <ComplexType Name="RequestType" >
+        <ComplexType Name="RequestType">
           <Property Type="String" Name="SPID" Nullable="false" />
           <Property Type="String" Name="SPServiceID" Nullable="false" />
           <Property Type="String" Name="ChannelID" Nullable="false" />
@@ -92,14 +92,14 @@
           <Property Type="String" Name="FeeMSISDN" Nullable="false" />
           <Property Type="CsspEntities.ParamsType" Name="Params" Nullable="false" />
         </ComplexType>
-        <ComplexType Name="Address_Info_Schema" >
+        <ComplexType Name="Address_Info_Schema">
           <Property Type="String" Name="DeviceType" Nullable="false" />
           <Property Type="String" Name="DeviceID" Nullable="false" />
         </ComplexType>
-        <ComplexType Name="ParamsType" >
+        <ComplexType Name="ParamsType">
           <Property Type="CsspEntities.PagerType" Name="Pager" Nullable="false" />
         </ComplexType>
-        <ComplexType Name="PagerType" >
+        <ComplexType Name="PagerType">
           <Property Type="String" Name="BeginIndex" Nullable="false" />
           <Property Type="String" Name="EndIndex" Nullable="false" />
         </ComplexType>
@@ -120,13 +120,13 @@
           <Property Name="Head" Type="CsspEntities.RespHead" Nullable="false" />
           <Property Name="Body" Type="CsspEntities.ResponseType" Nullable="false" />
         </EntityType>
-        <ComplexType Name="RespHead" >
+        <ComplexType Name="RespHead">
           <Property Type="CsspEntities.Address_Info_Schema" Name="Send_Address" Nullable="false" />
           <Property Type="CsspEntities.Address_Info_Schema" Name="Dest_Address" Nullable="false" />
           <Property Type="String" Name="TransactionID" Nullable="false" />
           <Property Type="String" Name="Version" Nullable="false" />
         </ComplexType>
-        <ComplexType Name="ResponseType" >
+        <ComplexType Name="ResponseType">
           <Property Type="String" Name="RetCode" Nullable="false" />
           <Property Type="String" Name="SPID" Nullable="false" />
           <Property Type="String" Name="SPServiceID" Nullable="false" />
@@ -216,14 +216,14 @@
 </Mapping></edmx:Mappings>
   </edmx:Runtime>
   <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
-  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <edmx:Designer>
     <edmx:Connection>
-      <DesignerInfoPropertySet>
+      <DesignerInfoPropertySet xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
         <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
       </DesignerInfoPropertySet>
     </edmx:Connection>
     <edmx:Options>
-      <DesignerInfoPropertySet>
+      <DesignerInfoPropertySet xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
         <DesignerProperty Name="ValidateOnBuild" Value="False" />
         <DesignerProperty Name="EnablePluralization" Value="False" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="无" />

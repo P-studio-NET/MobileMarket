@@ -2,13 +2,13 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, and Azure
 -- --------------------------------------------------
--- Date Created: 08/22/2013 00:30:19
--- Generated from EDMX file: C:\Users\LibreK\SkyDrive\Coding\PopcornStudios\PopcornStudios\MockAspirecnServices\Aspirecn.Entities\DownloadCenter\ModelDownloadCenter.edmx
+-- Date Created: 09/28/2013 14:55:45
+-- Generated from EDMX file: D:\Documents\GitHub\MobileMarket\MobileMarketToolSet\Aspirecn.Entities\DownloadCenter\ModelDownloadCenter.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
 GO
-USE [ASPIRECN];
+USE [MockAspireCN];
 GO
 IF SCHEMA_ID(N'dbo') IS NULL EXECUTE(N'CREATE SCHEMA [dbo]');
 GO

@@ -5,65 +5,65 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="AspirecnUserCenterModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityContainer Name="AspirecnUserCenterModelStoreContainer">
-          <EntitySet Name="t_user_info" EntityType="AspirecnUserCenterModel.Store.t_user_info" store:Type="Tables" Schema="dbo" />
-        </EntityContainer>
-        <EntityType Name="t_user_info">
-          <Key>
-            <PropertyRef Name="UserId" />
-          </Key>
-          <Property Name="UserId" Type="varchar" Nullable="false" MaxLength="11" />
-          <Property Name="PuserId" Type="varchar" MaxLength="11" />
-          <Property Name="LoginName" Type="varchar" MaxLength="100" />
-          <Property Name="UserType" Type="int" />
-          <Property Name="IMSI" Type="varchar" MaxLength="64" />
-          <Property Name="BindMsisdn" Type="varchar" MaxLength="11" />
-          <Property Name="Password" Type="varchar" MaxLength="40" />
-          <Property Name="ErrorTimes" Type="int" />
-          <Property Name="LockTime" Type="datetime" />
-          <Property Name="NickName" Type="varchar" MaxLength="40" />
-          <Property Name="Email" Type="varchar" MaxLength="80" />
-          <Property Name="HeadImage" Type="varchar" MaxLength="200" />
-          <Property Name="Sex" Type="varchar" MaxLength="2" />
-          <Property Name="Birthday" Type="varchar" MaxLength="10" />
-          <Property Name="Constellation" Type="varchar" MaxLength="2" />
-          <Property Name="Work" Type="varchar" MaxLength="2" />
-          <Property Name="Introduce" Type="varchar" MaxLength="256" />
-          <Property Name="Favorite" Type="varchar" MaxLength="256" />
-          <Property Name="ProvinceId" Type="varchar" MaxLength="10" />
-          <Property Name="CityId" Type="varchar" MaxLength="10" />
-          <Property Name="Address" Type="varchar" MaxLength="100" />
-          <Property Name="RegTime" Type="datetime" />
-          <Property Name="RegPlace" Type="varchar" MaxLength="3" />
-          <Property Name="LastLogonTime" Type="datetime" />
-          <Property Name="LastLogonPlace" Type="varchar" MaxLength="3" />
-          <Property Name="LudTime" Type="datetime" />
-          <Property Name="LudPlace" Type="varchar" MaxLength="3" />
-          <Property Name="WwwFirLogonCId" Type="varchar" MaxLength="64" />
-          <Property Name="WwwFirLogonTime" Type="datetime" />
-          <Property Name="WwwDeviceId" Type="varchar" MaxLength="64" />
-          <Property Name="MoFirLogonCId" Type="varchar" MaxLength="64" />
-          <Property Name="MoFirLogonTime" Type="datetime" />
-          <Property Name="MoDeviceId" Type="varchar" MaxLength="64" />
-          <Property Name="WapFirLogonCId" Type="varchar" MaxLength="64" />
-          <Property Name="WapFirLogonTime" Type="datetime" />
-          <Property Name="WapDeviceId" Type="varchar" MaxLength="64" />
-          <Property Name="PayPassword" Type="varchar" MaxLength="40" />
-          <Property Name="PayPasswordStatus" Type="int" />
-          <Property Name="PaySwitchStatus" Type="int" />
-          <Property Name="PartitionID" Type="varchar" MaxLength="2" />
-          <Property Name="BlogStat139" Type="int" />
-          <Property Name="BlogUID139" Type="varchar" MaxLength="40" />
-          <Property Name="Follow_ap" Type="varchar" MaxLength="6" />
-          <Property Name="FetionNo" Type="varchar" MaxLength="20" />
-          <Property Name="fetionType" Type="int" />
-          <Property Name="personalSign" Type="varchar" MaxLength="100" />
-          <Property Name="privacySet" Type="int" />
-        </EntityType>
-      </Schema></edmx:StorageModels>
+  <EntityContainer Name="AspirecnUserCenterModelStoreContainer">
+    <EntitySet Name="t_user_info" EntityType="AspirecnUserCenterModel.Store.t_user_info" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="t_user_info">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="varchar" Nullable="false" MaxLength="11" />
+    <Property Name="PuserId" Type="varchar" Nullable="true" MaxLength="11" />
+    <Property Name="LoginName" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="UserType" Type="int" Nullable="true" />
+    <Property Name="IMSI" Type="varchar" Nullable="true" MaxLength="64" />
+    <Property Name="BindMsisdn" Type="varchar" Nullable="true" MaxLength="11" />
+    <Property Name="Password" Type="varchar" Nullable="true" MaxLength="40" />
+    <Property Name="ErrorTimes" Type="int" Nullable="true" />
+    <Property Name="LockTime" Type="datetime" Nullable="true" />
+    <Property Name="NickName" Type="varchar" Nullable="true" MaxLength="40" />
+    <Property Name="Email" Type="varchar" Nullable="true" MaxLength="80" />
+    <Property Name="HeadImage" Type="varchar" Nullable="true" MaxLength="200" />
+    <Property Name="Sex" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="Birthday" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="Constellation" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="Work" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="Introduce" Type="varchar" Nullable="true" MaxLength="256" />
+    <Property Name="Favorite" Type="varchar" Nullable="true" MaxLength="256" />
+    <Property Name="ProvinceId" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="CityId" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="Address" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="RegTime" Type="datetime" Nullable="true" />
+    <Property Name="RegPlace" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="LastLogonTime" Type="datetime" Nullable="true" />
+    <Property Name="LastLogonPlace" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="LudTime" Type="datetime" Nullable="true" />
+    <Property Name="LudPlace" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="WwwFirLogonCId" Type="varchar" Nullable="true" MaxLength="64" />
+    <Property Name="WwwFirLogonTime" Type="datetime" Nullable="true" />
+    <Property Name="WwwDeviceId" Type="varchar" Nullable="true" MaxLength="64" />
+    <Property Name="MoFirLogonCId" Type="varchar" Nullable="true" MaxLength="64" />
+    <Property Name="MoFirLogonTime" Type="datetime" Nullable="true" />
+    <Property Name="MoDeviceId" Type="varchar" Nullable="true" MaxLength="64" />
+    <Property Name="WapFirLogonCId" Type="varchar" Nullable="true" MaxLength="64" />
+    <Property Name="WapFirLogonTime" Type="datetime" Nullable="true" />
+    <Property Name="WapDeviceId" Type="varchar" Nullable="true" MaxLength="64" />
+    <Property Name="PayPassword" Type="varchar" Nullable="true" MaxLength="40" />
+    <Property Name="PayPasswordStatus" Type="int" Nullable="true" />
+    <Property Name="PaySwitchStatus" Type="int" Nullable="true" />
+    <Property Name="PartitionID" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="Follow_ap" Type="varchar" Nullable="true" MaxLength="6" />
+    <Property Name="FetionNo" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="fetionType" Type="int" Nullable="true" />
+    <Property Name="personalSign" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="privacySet" Type="int" Nullable="true" />
+    <Property Name="BlogStat139" Type="int" Nullable="true" />
+    <Property Name="BlogUID139" Type="varchar" Nullable="true" MaxLength="40" />
+  </EntityType>
+</Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="AspirecnUserCenterModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="AspirecnUserCenterModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
         <EntityContainer Name="AspirecnUserCenterEntities" p1:LazyLoadingEnabled="true">
           <EntitySet Name="t_user_info" EntityType="AspirecnUserCenterModel.t_user_info" />
         </EntityContainer>
@@ -123,64 +123,63 @@
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
-      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="AspirecnUserCenterModelStoreContainer" CdmEntityContainer="AspirecnUserCenterEntities">
-          <EntitySetMapping Name="t_user_info">
-            <EntityTypeMapping TypeName="AspirecnUserCenterModel.t_user_info">
-              <MappingFragment StoreEntitySet="t_user_info">
-                <ScalarProperty Name="BlogUID139" ColumnName="BlogUID139" />
-                <ScalarProperty Name="BlogStat139" ColumnName="BlogStat139" />
-                <ScalarProperty Name="UserId" ColumnName="UserId" />
-                <ScalarProperty Name="PuserId" ColumnName="PuserId" />
-                <ScalarProperty Name="LoginName" ColumnName="LoginName" />
-                <ScalarProperty Name="UserType" ColumnName="UserType" />
-                <ScalarProperty Name="IMSI" ColumnName="IMSI" />
-                <ScalarProperty Name="BindMsisdn" ColumnName="BindMsisdn" />
-                <ScalarProperty Name="Password" ColumnName="Password" />
-                <ScalarProperty Name="ErrorTimes" ColumnName="ErrorTimes" />
-                <ScalarProperty Name="LockTime" ColumnName="LockTime" />
-                <ScalarProperty Name="NickName" ColumnName="NickName" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="HeadImage" ColumnName="HeadImage" />
-                <ScalarProperty Name="Sex" ColumnName="Sex" />
-                <ScalarProperty Name="Birthday" ColumnName="Birthday" />
-                <ScalarProperty Name="Constellation" ColumnName="Constellation" />
-                <ScalarProperty Name="Work" ColumnName="Work" />
-                <ScalarProperty Name="Introduce" ColumnName="Introduce" />
-                <ScalarProperty Name="Favorite" ColumnName="Favorite" />
-                <ScalarProperty Name="ProvinceId" ColumnName="ProvinceId" />
-                <ScalarProperty Name="CityId" ColumnName="CityId" />
-                <ScalarProperty Name="Address" ColumnName="Address" />
-                <ScalarProperty Name="RegTime" ColumnName="RegTime" />
-                <ScalarProperty Name="RegPlace" ColumnName="RegPlace" />
-                <ScalarProperty Name="LastLogonTime" ColumnName="LastLogonTime" />
-                <ScalarProperty Name="LastLogonPlace" ColumnName="LastLogonPlace" />
-                <ScalarProperty Name="LudTime" ColumnName="LudTime" />
-                <ScalarProperty Name="LudPlace" ColumnName="LudPlace" />
-                <ScalarProperty Name="WwwFirLogonCId" ColumnName="WwwFirLogonCId" />
-                <ScalarProperty Name="WwwFirLogonTime" ColumnName="WwwFirLogonTime" />
-                <ScalarProperty Name="WwwDeviceId" ColumnName="WwwDeviceId" />
-                <ScalarProperty Name="MoFirLogonCId" ColumnName="MoFirLogonCId" />
-                <ScalarProperty Name="MoFirLogonTime" ColumnName="MoFirLogonTime" />
-                <ScalarProperty Name="MoDeviceId" ColumnName="MoDeviceId" />
-                <ScalarProperty Name="WapFirLogonCId" ColumnName="WapFirLogonCId" />
-                <ScalarProperty Name="WapFirLogonTime" ColumnName="WapFirLogonTime" />
-                <ScalarProperty Name="WapDeviceId" ColumnName="WapDeviceId" />
-                <ScalarProperty Name="PayPassword" ColumnName="PayPassword" />
-                <ScalarProperty Name="PayPasswordStatus" ColumnName="PayPasswordStatus" />
-                <ScalarProperty Name="PaySwitchStatus" ColumnName="PaySwitchStatus" />
-                <ScalarProperty Name="PartitionID" ColumnName="PartitionID" />
-                <ScalarProperty Name="Follow_ap" ColumnName="Follow_ap" />
-                <ScalarProperty Name="FetionNo" ColumnName="FetionNo" />
-                <ScalarProperty Name="fetionType" ColumnName="fetionType" />
-                <ScalarProperty Name="personalSign" ColumnName="personalSign" />
-                <ScalarProperty Name="privacySet" ColumnName="privacySet" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-        </EntityContainerMapping>
-      </Mapping>
-    </edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AspirecnUserCenterModelStoreContainer" CdmEntityContainer="AspirecnUserCenterEntities">
+    <EntitySetMapping Name="t_user_info">
+      <EntityTypeMapping TypeName="IsTypeOf(AspirecnUserCenterModel.t_user_info)">
+        <MappingFragment StoreEntitySet="t_user_info">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PuserId" ColumnName="PuserId" />
+          <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="IMSI" ColumnName="IMSI" />
+          <ScalarProperty Name="BindMsisdn" ColumnName="BindMsisdn" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ErrorTimes" ColumnName="ErrorTimes" />
+          <ScalarProperty Name="LockTime" ColumnName="LockTime" />
+          <ScalarProperty Name="NickName" ColumnName="NickName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="HeadImage" ColumnName="HeadImage" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="Constellation" ColumnName="Constellation" />
+          <ScalarProperty Name="Work" ColumnName="Work" />
+          <ScalarProperty Name="Introduce" ColumnName="Introduce" />
+          <ScalarProperty Name="Favorite" ColumnName="Favorite" />
+          <ScalarProperty Name="ProvinceId" ColumnName="ProvinceId" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="RegTime" ColumnName="RegTime" />
+          <ScalarProperty Name="RegPlace" ColumnName="RegPlace" />
+          <ScalarProperty Name="LastLogonTime" ColumnName="LastLogonTime" />
+          <ScalarProperty Name="LastLogonPlace" ColumnName="LastLogonPlace" />
+          <ScalarProperty Name="LudTime" ColumnName="LudTime" />
+          <ScalarProperty Name="LudPlace" ColumnName="LudPlace" />
+          <ScalarProperty Name="WwwFirLogonCId" ColumnName="WwwFirLogonCId" />
+          <ScalarProperty Name="WwwFirLogonTime" ColumnName="WwwFirLogonTime" />
+          <ScalarProperty Name="WwwDeviceId" ColumnName="WwwDeviceId" />
+          <ScalarProperty Name="MoFirLogonCId" ColumnName="MoFirLogonCId" />
+          <ScalarProperty Name="MoFirLogonTime" ColumnName="MoFirLogonTime" />
+          <ScalarProperty Name="MoDeviceId" ColumnName="MoDeviceId" />
+          <ScalarProperty Name="WapFirLogonCId" ColumnName="WapFirLogonCId" />
+          <ScalarProperty Name="WapFirLogonTime" ColumnName="WapFirLogonTime" />
+          <ScalarProperty Name="WapDeviceId" ColumnName="WapDeviceId" />
+          <ScalarProperty Name="PayPassword" ColumnName="PayPassword" />
+          <ScalarProperty Name="PayPasswordStatus" ColumnName="PayPasswordStatus" />
+          <ScalarProperty Name="PaySwitchStatus" ColumnName="PaySwitchStatus" />
+          <ScalarProperty Name="PartitionID" ColumnName="PartitionID" />
+          <ScalarProperty Name="Follow_ap" ColumnName="Follow_ap" />
+          <ScalarProperty Name="FetionNo" ColumnName="FetionNo" />
+          <ScalarProperty Name="fetionType" ColumnName="fetionType" />
+          <ScalarProperty Name="personalSign" ColumnName="personalSign" />
+          <ScalarProperty Name="privacySet" ColumnName="privacySet" />
+          <ScalarProperty Name="BlogStat139" ColumnName="BlogStat139" />
+          <ScalarProperty Name="BlogUID139" ColumnName="BlogUID139" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
   </edmx:Runtime>
   <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
   <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
@@ -198,6 +197,6 @@
       </DesignerInfoPropertySet>
     </Options>
     <!-- Diagram content (shape and connector positions) -->
-    <Diagrams></Diagrams>
+    <Diagrams />
   </Designer>
 </edmx:Edmx>
